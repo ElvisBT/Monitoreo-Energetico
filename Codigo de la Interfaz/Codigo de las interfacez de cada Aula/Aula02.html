@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="favicon-16x16.png">
+    <title>Visualización de Datos en Tiempo Real</title>
+    <!-- Enlaza los archivos de Chart.js y tu archivo de estilos CSS aquí -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.3.0/raphael.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/toorshia/justgage@1.4.0/dist/justgage.min.js"></script>
+    <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+
+    <script src="https://code.highcharts.com/highcharts-more.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/modules/solid-gauge.js"></script>
+
+
+    <link rel="stylesheet" href="aula01css.css"> <!-- Enlaza tu archivo de estilos CSS aquí -->
+
+    <!-- Incluye la biblioteca de Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-auth.js"></script>
+    <script src="firebaseconfig.js"></script>
+    
+    
+</head>
+<body>
+    <div class="container">
+        <h1>Monitoreo de Consumo Enegético Aula 302</h1>
+        <h1>Aire</h1>
+        <div class="data">
+            <div class="data-item">
+                <h2>Potencia</h2>
+                <p id="POTENCIA"><span id="POTENCIA_VALOR">0</span> W</p>
+            </div>
+            <div class="data-item">
+                <h2>Corriente</h2>
+                <p id="CORRIENTE"><span id="CORRIENTE_VALOR">0</span> A</p>
+            </div>
+            <div class="data-item">
+                <h2>Voltaje</h2>
+                <p id="VOLTAJE"><span id="VOLTAJE_VALOR">0</span> V</p>
+            </div>
+        </div>
+        <canvas id="grafico-en-tiempo-real" width="400" height="200"></canvas>
+        <div id="container-speed" class="chart-container"></div>
+    </div>
+    <div class="container">
+        <h1>Enchufes</h1>
+        <div class="data">
+            <div class="data-item">
+                <h2>Potencia</h2>
+                <p id="POTENCIA2"><span id="POTENCIA_VALOR2">0</span> W</p>
+            </div>
+            <div class="data-item">
+                <h2>Corriente</h2>
+                <p id="CORRIENTE2"><span id="CORRIENTE_VALOR2">0</span> A</p>
+            </div>
+            <div class="data-item">
+                <h2>Voltaje</h2>
+                <p id="VOLTAJE2"><span id="VOLTAJE_VALOR2">0</span> V</p>
+            </div>
+        </div>
+        <canvas id="grafico-en-tiempo-real2" width="400" height="200"></canvas>
+        <div id="container-speed2" class="chart-container"></div>
+    </div>
+    <div class="container">
+        <h1>Luces</h1>
+        <div class="data">
+            <div class="data-item">
+                <h2>Potencia</h2>
+                <p id="POTENCIA3"><span id="POTENCIA_VALOR3">0</span> W</p>
+            </div>
+            <div class="data-item">
+                <h2>Corriente</h2>
+                <p id="CORRIENTE3"><span id="CORRIENTE_VALOR3">0</span> A</p>
+            </div>
+            <div class="data-item">
+                <h2>Voltaje</h2>
+                <p id="VOLTAJE3"><span id="VOLTAJE_VALOR3">0</span> V</p>
+            </div>
+        </div>
+        <canvas id="grafico-en-tiempo-real3" width="400" height="200"></canvas>
+        <div id="container-speed3" class="chart-container"></div>
+    </div>
+    <button id="btnAtras" class="boton-atras" onclick="window.location.href='General.html'">Atrás</button>
+    <script src="graficoaula02.js"></script>
+</body>
+</html>

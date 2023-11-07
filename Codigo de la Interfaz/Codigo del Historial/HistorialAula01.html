@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" type="image/png" href="favicon-16x16.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historial del Consumo Energético</title>
+    <link rel="stylesheet" href="CsshistorialAula01.css"> <!-- Agrega el enlace a tu archivo de estilos CSS si lo tienes -->
+
+    <!-- Agrega la biblioteca Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+
+</head>
+<body>
+    <main>
+        <h2>Registro del Consumo Eléctrico</h2>
+        <h4>Consumo del Aula 301</h4>
+        <h4>Mensual</h4>
+        <div id="line-chart1"></div>
+        <h4>Diario</h4>
+        <!-- Gráfico 1 -->
+        <h5>Consumo Aires Acondicionados</h5>
+        <div id="line-chart2"></div>
+
+        <!-- Gráfico 2 -->
+        <h5>Consumo Enchufes</h5>
+        <div id="line-chart3"></div>
+
+        <!-- Gráfico 3 -->
+        <h5>Consumo Luces</h5>
+        <div id="line-chart4"></div>
+
+        <h4>Consumo del Aula 302</h4>
+        <h4>Mensual</h4>
+        <div id="line-chart5"></div>
+        <h4>Diario</h4>
+        <!-- Gráfico 4 -->
+        <h5>Consumo Aires Acondicionados</h5>
+        <div id="line-chart6"></div>
+
+        <!-- Gráfico 5 -->
+        <h5>Consumo Enchufes</h5>
+        <div id="line-chart7"></div>
+
+        <!-- Gráfico 6 -->
+        <h5>Consumo Luces</h5>
+        <div id="line-chart8"></div>
+
+        <h4>Consumo del Aula 303</h4>
+        <h4>Mensual</h4>
+        <div id="line-chart9"></div>
+        <h4>Diario</h4>
+        <!-- Gráfico 7 -->
+        <h5>Consumo Aires Acondicionados</h5>
+        <div id="line-chart10"></div>
+
+        <!-- Gráfico 8 -->
+        <h5>Consumo Enchufes</h5>
+        <div id="line-chart11"></div>
+
+        <!-- Gráfico 9 -->
+        <h5>Consumo Luces</h5>
+        <div id="line-chart12"></div>
+
+    </main>
+    <button id="historial-button"><a href="General.html">Regresar</a></button>
+    <script src="firebaseconfig.js"></script>
+    <script src="HistorialGraficoAula01.js"></script>
+</body>
+</html>
+

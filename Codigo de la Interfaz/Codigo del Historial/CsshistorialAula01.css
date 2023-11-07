@@ -1,0 +1,80 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
+
+body {
+  font-family: "Open Sans", Arial;
+  background: #EDEDED;
+  background-image: url('fotoU.jpeg'); /* URL de tu imagen de fondo */
+  background-size: cover;
+  background-position: center;
+}
+
+main {
+  width: 800px; /* Cambia el valor aquí para hacerlo más ancho */
+  margin: 10px auto;
+  padding: 10px 20px 30px;
+  background: #FFF;
+  box-shadow: 0 3px 5px rgba(0,0,0,0.2);
+}
+
+p {
+  margin-top: 2rem;
+  font-size: 13px;
+}
+
+#line-chart,
+#line-chart1, /* Estilos para el nuevo gráfico 1 */
+#line-chart2, /* Estilos para el nuevo gráfico 2 */
+#line-chart3 /* Estilos para el nuevo gráfico 3 */ {
+  width: 800px; /* Cambia el valor aquí para hacerlos más anchos */
+  height: 300px;
+  position: relative;
+}
+
+#pie-chart {
+  width: 800px; /* Cambia el valor aquí para hacerlo más ancho */
+  height: 250px;
+  position: relative;
+}
+
+#pie-chart::after {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 260px;
+  left: 70px;
+  width: 370px; /* Cambia el valor aquí para hacerlo más ancho */
+  height: 2px;
+  background: rgba(0,0,0,0.1);
+  border-radius: 50%;
+  box-shadow: 0 0 3px 4px rgba(0,0,0,0.1);
+}
+
+h2, h4{
+    text-align: center;
+}
+/* Estilos para el botón "Historial" */
+#historial-button {
+    background-color: #ff5722; /* Color de fondo similar al botón "Cerrar Sesión" */
+    color: #fff; /* Color del texto */
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.2s ease-in-out, box-shadow 0.3s;
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: block; /* Cambiar el botón a un elemento en bloque para centrarlo */
+    margin: 0 auto; /* Centrar horizontalmente */
+    margin-top: 20px; /* Espaciado superior */
+}
+
+#historial-button a {
+    text-decoration: none;
+    color: #fff; /* Color del enlace */
+}
+
+#historial-button:hover {
+    background-color: #f44336; /* Cambio de color de fondo al pasar el cursor, similar al botón "Cerrar Sesión" */
+    transform: translateY(-3px); /* Desplazamiento hacia arriba al pasar el cursor */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra al pasar el cursor */
+}
